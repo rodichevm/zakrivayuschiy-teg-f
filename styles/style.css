@@ -11,8 +11,39 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  margin: 0 auto;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
+  max-inline-size: 700px;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
+  background-color: deepskyblue;
+}
+
+.header {
+  padding: clamp(120px, 0.751vw + 7.324rem, 128px) clamp(14px, 10.141vw - 1.502rem, 120.5px);
+  inline-size: clamp(375px, 30.516vw + 16.285rem, 700px);
+  block-size: clamp(327px, 3.85vw + 19.535rem, 368px);
+  margin-block-start: 100px;
+  font-family: var(--accent-font), fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  border: 2px #000 solid;
+}
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: var(--title-font-weight);
+  margin-block-end: 20px;
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+@media (max-width: 375px) {
+  .header {
+    inline-size: 100%;
+  }
 }
