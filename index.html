@@ -14,11 +14,37 @@
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" sizes="180x180">
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header bordered">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
       <p class="header__subtitle">закрывающий тег</p>
     </header>
-    <main></main>
+    <main class="content">
+      <article class="post">
+        <h2 class="post__title bordered">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <img class="post__image bordered" src="./images/image-1.svg" alt="car" />
+        <div class="post__content bordered">
+          <p class="post__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и
+                                настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на
+                                ваше будущее.
+          </p>
+          <p class="post__text">Место для ваших воспоминаний о начале обучения.</p>
+          <div class="post__buttons">
+            <button class="card__icon-button">
+              <img class="like-icon" src="./svg/heart.svg" alt="like">
+            </button>
+            <button class="card__like-button bordered">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <button class=" saving_button bordered">
+        <svg>
+          <use href="svg/floppy.svg#floppy"/>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

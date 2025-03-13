@@ -14,22 +14,28 @@
   margin: 0 auto;
   min-inline-size: 375px;
   min-block-size: 100dvb;
+  max-block-size: 1440px;
   max-inline-size: 700px;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
+  font-size: var(--main-font-size);
   background-color: deepskyblue;
 }
 
 .header {
   padding: clamp(120px, 0.751vw + 7.324rem, 128px) clamp(14px, 10.141vw - 1.502rem, 120.5px);
-  inline-size: clamp(375px, 30.516vw + 16.285rem, 700px);
   block-size: clamp(327px, 3.85vw + 19.535rem, 368px);
+  inline-size: 100%;
   margin-block-start: 100px;
+  margin-block-end: 100px;
   font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   text-align: center;
   background-color: #fff;
-  border: 2px #000 solid;
+}
+
+.bordered {
+  border: var(--element-border);
 }
 
 .header__title {
@@ -40,6 +46,84 @@
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  margin-block-end: 50px;
+  background-color: #fff;
+}
+
+.post__title {
+  padding: 4px 10px;
+  font-size: inherit;
+  font-variation-settings: "wght" var(--title-font-weight);
+}
+
+.post__image {
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+  border-block-start: none;
+  border-block-end: none;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  min-block-size: 228px;
+}
+
+.post__text {
+  line-height: 117%;
+  margin-block-end: 25px;
+}
+
+.post__buttons {
+  display: flex;
+  block-size: 39px;
+  gap: 5px;
+  align-self: end;
+}
+
+.card__icon-button {
+}
+
+.button__text {
+  font-family: var(--accent-font), fantasy;
+  font-size: 14px;
+  line-height: 90%;
+}
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+}
+
+.saving_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: center;
+  inline-size: 335px;
+  block-size: 55px;
+  margin-block-end: 103px;
+  background-color: #fff;
+}
+
+.saving_button svg {
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 @media (max-width: 375px) {

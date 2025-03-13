@@ -3,4 +3,7 @@
   --accent-font: 'PressStart2P';
   --title-font-weight: 700;
   --main-font-weight: 400;
+  --main-font-size: 1.125em;
+
+  --element-border: solid 2px #000;
 }
