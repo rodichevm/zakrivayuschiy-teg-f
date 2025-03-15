@@ -190,7 +190,7 @@
   line-height: 150%;
 }
 
-dialog::backdrop {
+.modal::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
