@@ -19,7 +19,10 @@
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
   font-size: var(--main-font-size);
-  background: linear-gradient( to left, #e66465, #9198e5);
+  background: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -151,11 +154,8 @@
   padding: 30px;
 }
 
-.save_button svg {
-  flex-shrink: 0;
-}
-
 .save_button svg{
+  flex-shrink: 0;
   width: 21px;
   height: 21px;
 }
@@ -203,5 +203,10 @@ dialog::backdrop {
   .save_button svg{
     width: 28px;
     height: 28px;
+  }
+
+  .modal {
+    inline-size: 341px;
+    block-size: 191px;
   }
 }
