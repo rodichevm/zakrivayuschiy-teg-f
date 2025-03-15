@@ -19,7 +19,7 @@
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight);
   font-size: var(--main-font-size);
-  background-color: deepskyblue;
+  background: linear-gradient( to left, #e66465, #9198e5);
 }
 
 .header {
@@ -51,13 +51,14 @@
 .content {
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  padding-block-end: 103px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   inline-size: 100%;
-  margin-block-end: 50px;
   background-color: #fff;
 }
 
@@ -69,9 +70,9 @@
 
 .card__image_wrapper {
   position: relative;
-  aspect-ratio: 1 / 1;
-  border-block-start: none;
-  border-block-end: none;
+  align-self: center;
+  inline-size: 100%;
+  block-size: clamp(375px, 30.516vw + 16.285rem, 700px);
 }
 
 .card__label {
@@ -79,8 +80,7 @@
   position: absolute;
   font-size: 14px;
   inset-block-start: 25px;
-  inset-inline-end: 25px;
-  text-transform: uppercase;
+  inset-inline-end: clamp(13px, 1.127vw + 0.548rem, 25px);
   text-shadow: #fff 0 0 1px;
   -webkit-text-stroke: 1px var(--outline-color);
   opacity: 0.5;
@@ -91,7 +91,9 @@
 }
 
 .card__image {
+  display: block;
   inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -129,7 +131,7 @@
   block-size: 38px;
 }
 
-.saving_button {
+.save_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,17 +139,69 @@
   align-self: center;
   inline-size: 335px;
   block-size: 55px;
-  margin-block-end: 103px;
   background-color: #fff;
 }
 
-.saving_button svg {
-  inline-size: 21px;
-  block-size: 21px;
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  inline-size: 353px;
+  block-size: 191px;
+  padding: 30px;
+}
+
+.save_button svg {
+  flex-shrink: 0;
+}
+
+.save_button svg{
+  width: 21px;
+  height: 21px;
+}
+
+.modal[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal__content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  inline-size: 100%;
+}
+
+.modal__content svg {
+  flex-shrink: 0;
+  display: block;
+  width: 39px;
+  height: 39px;
+}
+
+.modal__button {
+  inline-size: 100%;
+  block-size: 38px;
+}
+
+.modal .button__text {
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 @media (max-width: 375px) {
-  .header {
-    inline-size: 100%;
+ .save_button {
+   flex-direction: column;
+   inline-size: 306px;
+   block-size: 80px;
+ }
+  .save_button svg{
+    width: 28px;
+    height: 28px;
   }
 }
