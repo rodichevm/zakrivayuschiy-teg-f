@@ -148,6 +148,10 @@
   color: #fff;
 }
 
+.like-icon #sparks {
+  opacity: 0;
+}
+
 .card__like-button {
   position: relative;
   inline-size: 130px;
