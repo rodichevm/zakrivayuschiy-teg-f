@@ -266,12 +266,14 @@
 }
 
 .modal {
-  position: absolute;
+  display: none;
+  position: fixed;
   padding: 30px;
   background-color: #fff;
-  inset: 0;
   inline-size: 353px;
   block-size: 191px;
+  inset: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .save_button svg {
