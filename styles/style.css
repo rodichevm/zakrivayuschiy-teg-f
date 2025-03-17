@@ -328,6 +328,13 @@
   box-shadow: 2px 2px 0 #000;
 }
 
+.card__like-button:hover,
+.save_button:hover,
+.modal__button:hover,
+.like-icon:hover {
+  cursor: pointer;
+}
+
 .card__like-button::before,
 .save_button::before,
 .modal__button::before {
