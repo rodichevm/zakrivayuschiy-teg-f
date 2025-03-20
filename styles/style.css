@@ -136,6 +136,7 @@
 
 button {
   position: relative;
+  overflow: hidden;
   transition: box-shadow 0.3s ease;
   background-color: var(--button-background-color, #fff);
 }
@@ -152,7 +153,7 @@ button:hover {
 .card__icon-button {
   transition: border 0.3s ease;
   border: 2px solid transparent;
-  block-size: 100%;
+  block-size: 38px;
 }
 
 .card__icon-button:focus-visible {
@@ -162,6 +163,7 @@ button:hover {
 
 .card__icon-button:focus {
   outline: none;
+  box-shadow: none;
 }
 
 .card__like-button {
