@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, 'Inter-Variable'), sans-serif;
+  font-family: var(--main-font, "Inter-Variable"), sans-serif;
   font-size: var(--main-font-size, 1.125em);
   margin: 0 auto;
   background: var(--background-image, #fff);
@@ -13,8 +13,9 @@
 }
 
 .header {
-  font-family: var(--accent-font, 'PressStart2P'), fantasy;
-  padding: clamp(120px, 0.751vw + 7.324rem, 128px) clamp(14px, 10.141vw - 1.502rem, 120.5px);
+  font-family: var(--accent-font, "PressStart2P"), fantasy;
+  padding: clamp(120px, 0.751vw + 7.324rem, 128px)
+    clamp(14px, 10.141vw - 1.502rem, 120.5px);
   text-align: center;
   text-transform: uppercase;
   background-color: #fff;
@@ -65,7 +66,7 @@
 }
 
 .card__label {
-  font-family: var(--accent-font, 'PressStart2P'), fantasy;
+  font-family: var(--accent-font, "PressStart2P"), fantasy;
   font-size: 14px;
   position: absolute;
   z-index: 1;
@@ -172,7 +173,7 @@ button:hover {
 }
 
 .button__text {
-  font-family: var(--accent-font, 'PressStart2P'), fantasy;
+  font-family: var(--accent-font, "PressStart2P"), fantasy;
   font-size: 14px;
   line-height: 90%;
   position: relative;
